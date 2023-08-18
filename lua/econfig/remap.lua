@@ -3,6 +3,10 @@ vim.g.mapleader = " "
 vim.keymap.set("i", "ii", "<Esc>")
 vim.keymap.set("n", "ii", "<Esc>")
 vim.keymap.set("v", "ii", "<Esc>")
+vim.keymap.set("n", "<leader>n", "<cmd> :NERDTreeFocus<CR>")
+vim.keymap.set("n", "<C-n>", "<cmd> :NERDTree<CR>")
+vim.keymap.set("n", "<C-t>", "<cmd> :NERDTreeToggle<CR>")
+vim.keymap.set("n", "<C-f>", "<cmd> :NERDTreeFind<CR>")
 --vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 --
 --vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
@@ -45,7 +49,7 @@ vim.keymap.set("v", "ii", "<Esc>")
 --vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 --vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 --
---vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.dotfiles/nvim/.config/nvim/lua/theprimeagen/packer.lua<CR>");
+vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.dotfiles/nvim/.config/nvim/lua/theprimeagen/packer.lua<CR>");
 --vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>");
 --
 --vim.keymap.set("n", "<leader><leader>", function()
