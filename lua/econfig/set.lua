@@ -4,6 +4,9 @@ vim.opt.nu = true
 vim.opt.relativenumber = true
 --MyColor Scheme
 vim.cmd[[colorscheme dracula]]
+--vim.cmd[[colorscheme "catppuccion"]]
+--vim.cmd[[colorscheme tokyonight]]
+--vim.cmd[[colorscheme "rose-pine"]]
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
@@ -11,7 +14,7 @@ vim.opt.expandtab = true
 
 vim.opt.smartindent = true
 
-vim.opt.wrap = false
+vim.opt.wrap = true 
 
 vim.opt.swapfile = false
 vim.opt.backup = false

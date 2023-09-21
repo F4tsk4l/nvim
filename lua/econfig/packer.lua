@@ -42,18 +42,22 @@ return require('packer').startup(function(use)
   use("preservim/nerdtree")
   use("tpope/vim-fugitive")
   use("nvim-treesitter/nvim-treesitter-context")
-  use {
-  'nvim-lualine/lualine.nvim',
+  use{'nvim-lualine/lualine.nvim',
   requires = { 'nvim-tree/nvim-web-devicons', opt = true }
 }
-use({
-    "aserowy/tmux.nvim",
+  use({"aserowy/tmux.nvim",
     config = function() return require("tmux").setup() end
 })
-  -- Using Packer:
-  use  ("lambdalisue/suda.vim");
-  use ("Mofiqul/dracula.nvim");
-  use {
+  -- My Modification 
+  use("norcalli/nvim-colorizer.lua");
+  use("lambdalisue/suda.vim");
+  use("Mofiqul/dracula.nvim");
+  use{"folke/tokyonight.nvim"};
+  use{"EdenEast/nightfox.nvim"};
+  use{"rose-pine/neovim", as = "rose-pine"};
+  use{"catppuccin/nvim", as = "catppuccin" };
+
+  use{
 	  'VonHeikemen/lsp-zero.nvim',
 	  branch = 'v1.x',
 	  requires = {
