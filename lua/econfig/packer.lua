@@ -37,7 +37,7 @@ return require('packer').startup(function(use)
   use("mbbill/undotree")
   use("junegunn/vim-easy-align")
   use('tiagofumo/vim-nerdtree-syntax-highlight')
-  use { 'alexghergh/nvim-tmux-navigation', config = function()
+  use{'alexghergh/nvim-tmux-navigation', config = function()
 
         local nvim_tmux_nav = require('nvim-tmux-navigation')
 
@@ -56,6 +56,10 @@ return require('packer').startup(function(use)
   use('Xuyuanp/nerdtree-git-plugin')
   use('ryanoasis/vim-devicons')
   use("preservim/nerdtree")
+  use {
+	"windwp/nvim-autopairs",
+    config = function() require("nvim-autopairs").setup {} end
+}
   use("tpope/vim-fugitive")
   use("nvim-treesitter/nvim-treesitter-context")
   use{'nvim-lualine/lualine.nvim',

@@ -8,6 +8,13 @@ vim.keymap.set("n", "<C-n>", "<cmd> :NERDTree<CR>")
 vim.keymap.set("n", "<C-t>", "<cmd> :NERDTreeToggle<CR>")
 vim.keymap.set("n", "<C-f>", "<cmd> :NERDTreeFind<CR>")
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+
+--vim.g.tmux_navigator_no_mappings = 1
+--vim.keymap.set("n", "<C-l>",  :<C-U> TmuxNavigateLeft<CR>")
+--vim.keymap.set("n", "<C-h>",  :<C-U> TmuxNavigateDown<CR>")
+--vim.keymap.set("n", "<C-l>",  :<C-U> TmuxNavigateUp<CR>")
+--vim.keymap.set("n", "<C-l>",  :<C-U> TmuxNavigateRight<CR>")
+--vim.keymap.set("n", "<C-l>",  :<C-U> TmuxNavigatePrevious<CR>")
 --
 --vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 --vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
