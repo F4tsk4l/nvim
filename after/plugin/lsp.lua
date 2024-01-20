@@ -1,6 +1,8 @@
 local lsp = require("lsp-zero")
 
 lsp.preset("recommended")
+--local lspconfig = require('lspconfig')
+--lspconfig.pyright.setup {}
 
 lsp.ensure_installed({
   'tsserver',
