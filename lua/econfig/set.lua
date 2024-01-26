@@ -1,11 +1,16 @@
 vim.opt.guicursor = ""
-
+-- Enable true color support
+if vim.fn.has("termguicolors") then
+    vim.o.termguicolors = true
+end
+--if vim.fn.has('nvim') then
+--    vim.cmd('hi Normal guibg=NONE ctermbg=NONE')
+--end
 vim.opt.nu = true
 vim.opt.relativenumber = true
---MyColor Scheme
-vim.cmd[[colorscheme dracula]]
---vim.cmd[[colorscheme "catppuccion"]]
+vim.cmd[[colorscheme "catppuccion"]]
 --vim.cmd[[colorscheme tokyonight]]
+vim.api.nvim_set_option('clipboard', 'unnamedplus')
 --vim.cmd[[colorscheme "rose-pine"]]
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
