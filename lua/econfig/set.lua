@@ -6,6 +6,8 @@ end
 --if vim.fn.has('nvim') then
 --    vim.cmd('hi Normal guibg=NONE ctermbg=NONE')
 --end
+vim.g.NERDTreeGitStatusUseNerdFonts = 1
+vim.g.NERDTreeGitStatusUntrackedFilesMode = 'all'
 vim.opt.nu = true
 vim.opt.relativenumber = true
 vim.cmd[[colorscheme "catppuccion"]]

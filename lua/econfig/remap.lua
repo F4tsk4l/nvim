@@ -2,15 +2,16 @@ vim.g.mapleader = " "
 vim.keymap.set("i", "ii", "<Esc>")
 vim.keymap.set("n", "ii", "<Esc>")
 vim.keymap.set("v", "ii", "<Esc>")
-vim.keymap.set("n", "<leader>n", "<cmd> :NERDTreeFocus <CR>")
+
+vim.keymap.set("n", "<M-t>n", " :NERDTreeFocus <CR>")
+vim.keymap.set("n", "<M-n>", " :NERDTree<CR>")
+vim.keymap.set("n", "<leader>n", " :NERDTreeToggle<CR>")
+vim.keymap.set("n", "<M-f>", " :NERDTreeFind<CR>")
 
 ---- next greatest remap ever : asbjornHaland
 vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 
---vim.keymap.set("n", "<C-n>", "<cmd> :NERDTree<CR>")
---vim.keymap.set("n", "<C-t>", "<cmd> :NERDTreeToggle<CR>")
---vim.keymap.set("n", "<C-f>", "<cmd> :NERDTreeFind<CR>")
 --vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 --vim.g.tmux_navigator_no_mappings = 1

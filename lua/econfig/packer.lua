@@ -8,7 +8,7 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   use {
-	  'nvim-telescope/telescope.nvim', tag = '0.1.0',
+	  'nvim-telescope/telescope.nvim', tag = '0.1.5',
 	  -- or                            , branch = '0.1.x',
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
@@ -36,7 +36,6 @@ return require('packer').startup(function(use)
   use("theprimeagen/refactoring.nvim")
   use("mbbill/undotree")
   use("junegunn/vim-easy-align")
-  use('tiagofumo/vim-nerdtree-syntax-highlight')
   use{'alexghergh/nvim-tmux-navigation', config = function()
 
         local nvim_tmux_nav = require('nvim-tmux-navigation')
@@ -53,9 +52,8 @@ return require('packer').startup(function(use)
 
     end
 }
-  use('Xuyuanp/nerdtree-git-plugin')
   use('ryanoasis/vim-devicons')
-  use("preservim/nerdtree")
+
   use {
 	"windwp/nvim-autopairs",
     config = function() require("nvim-autopairs").setup {} end
@@ -76,7 +74,9 @@ return require('packer').startup(function(use)
   use{"EdenEast/nightfox.nvim"};
   use{"rose-pine/neovim", as = "rose-pine"};
   use{"catppuccin/nvim", as = "catppuccin" };
-
+  use("preservim/nerdtree")
+  use("Xuyuanp/nerdtree-git-plugin")
+  use("tiagofumo/vim-nerdtree-syntax-highlight")
   use{
 	  'VonHeikemen/lsp-zero.nvim',
 	  branch = 'v1.x',
@@ -105,4 +105,3 @@ return require('packer').startup(function(use)
   use("laytan/cloak.nvim")
 
 end)
-
