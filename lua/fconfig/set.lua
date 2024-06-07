@@ -3,6 +3,7 @@ vim.opt.guicursor = ""
 if vim.fn.has("termguicolors") then
     vim.o.termguicolors = true
 end
+
 if vim.fn.has('nvim') then
     vim.cmd('hi Normal guibg=NONE ctermbg=NONE')
 end
@@ -21,10 +22,25 @@ vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
+----------
+--TODO-COMMENTS KEYBINDINGS
+vim.keymap.set("n", "]t", function()
+  require("todo-comments").jump_next()
+end, { desc = "Next todo comment" })
 
+vim.keymap.set("n", "[t", function()
+  require("todo-comments").jump_prev()
+end, { desc = "Previous todo comment" })
+
+-- You can also specify a list of valid jump keywords
+
+vim.keymap.set("n", "]t", function()
+  require("todo-comments").jump_next({keywords = { "ERROR", "WARNING" }})
+end, { desc = "Next error/warning todo comment" })
+-----------
 vim.opt.smartindent = true
 
-vim.opt.wrap = true 
+vim.opt.wrap = true
 
 vim.opt.swapfile = false
 vim.opt.backup = false

@@ -1,16 +1,18 @@
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
-
+-- HACK kakdjakjf
 local cmd = require('pckr.loader.cmd')
 local keys = require('pckr.loader.keys')
 
 require('pckr').add{
   { 'rose-pine/neovim' };
   { 'catppuccin/nvim' };
+  { 'philrunninger/nerdtree-visual-selection' };
   { 'christoomey/vim-tmux-navigator' };
   { 'mbbill/undotree' };
   { 'preservim/nerdtree' };
   { 'lambdalisue/suda.vim' };
   { 'folke/trouble.nvim' };
+  { 'folke/todo-comments.nvim' };
   { 'ryanoasis/vim-devicons' };
   { 'Xuyuanp/nerdtree-git-plugin' };
   { 'nvim-lualine/lualine.nvim',
@@ -25,11 +27,13 @@ require('pckr').add{
         require("nvim-autopairs").setup {}
     end
     };
-  { 'nvim-telescope/telescope.nvim', 
+  { 'nvim-telescope/telescope.nvim',
     tag = '0.1.6',
     requires = {'nvim-lua/plenary.nvim'}
     };
   { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' };
+  { 'stevearc/dressing.nvim' };
+  { 'petertriho/cmp-git' };
   { 'VonHeikemen/lsp-zero.nvim',
 	  branch = 'v3.x',
 	  requires = {
