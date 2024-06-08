@@ -16,26 +16,26 @@ vim.opt.relativenumber = true
 vim.cmd("colorscheme rose-pine")
 --vim.cmd[[colorscheme dracula]]
 --vim.cmd[[colorscheme dracula-soft]]
-
+--TODO:
 vim.api.nvim_set_option('clipboard', 'unnamedplus')
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 ----------
---TODO-COMMENTS KEYBINDINGS
+--TODO:-COMMENTS KEYBINDINGS
 vim.keymap.set("n", "]t", function()
-  require("todo-comments").jump_next()
+    require("todo-comments").jump_next()
 end, { desc = "Next todo comment" })
 
-vim.keymap.set("n", "[t", function()
-  require("todo-comments").jump_prev()
+vim.keymap.set("n", "]t", function()
+    require("todo-comments").jump_prev()
 end, { desc = "Previous todo comment" })
 
 -- You can also specify a list of valid jump keywords
 
 vim.keymap.set("n", "]t", function()
-  require("todo-comments").jump_next({keywords = { "ERROR", "WARNING" }})
+    require("todo-comments").jump_next({ keywords = { "ERROR", "WARNING" } })
 end, { desc = "Next error/warning todo comment" })
 -----------
 vim.opt.smartindent = true

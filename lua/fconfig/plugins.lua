@@ -11,7 +11,7 @@ require('pckr').add {
     { 'mbbill/undotree' },
     { 'preservim/nerdtree' },
     { 'lambdalisue/suda.vim' },
-    { 'folke/trouble.nvim' },
+    --{ 'folke/trouble.nvim' },
     { 'folke/todo-comments.nvim' },
     { 'ryanoasis/vim-devicons' },
     { 'Xuyuanp/nerdtree-git-plugin' },

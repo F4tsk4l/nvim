@@ -20,13 +20,14 @@ require('mason').setup({})
 require('mason-lspconfig').setup({
     -- Replace the language servers listed here
     -- with the ones you want to install
-    ensure_installed = { 'lua_ls', 'jedi_language_server', 'clangd', 'markdown_oxide' },
+    ensure_installed = { 'lua_ls', 'clangd', 'markdown_oxide' },
     handlers = {
         function(server_name)
             require('lspconfig')[server_name].setup({})
         end,
     }
 })
+
 -- Default KEYBINDINGS lsp_zero
 -- Here's the list of available keybindings:
 -- K: Displays hover information about the symbol under the cursor in a floating window. See :help vim.lsp.buf.hover().
