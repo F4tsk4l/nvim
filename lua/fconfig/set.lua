@@ -11,6 +11,7 @@ vim.g.NERDTreeGitStatusUseNerdFonts = 1
 vim.g.NERDTreeGitStatusUntrackedFilesMode = 'all'
 vim.opt.nu = true
 vim.opt.relativenumber = true
+vim.spell.spelllang = 'en_us'
 -- Color schemes
 --vim.cmd.colorscheme "catppuccin"
 vim.cmd("colorscheme rose-pine")
