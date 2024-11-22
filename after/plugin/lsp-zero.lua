@@ -5,7 +5,7 @@ require("lsp-format").setup {}
 lsp_zero.on_attach(function(client, bufnr)
     lsp_zero.default_keymaps({ buffer = bufnr })
     require("lsp-format").on_attach(client, bufnr)
-    -- lsp_zero.buffer_autoformat()
+    lsp_zero.buffer_autoformat()
 end)
 require("lspconfig").gopls.setup { on_attach = on_attach }
 
@@ -20,7 +20,7 @@ require('mason').setup({})
 require('mason-lspconfig').setup({
     -- Replace the language servers listed here
     -- with the ones you want to install
-    ensure_installed = { 'lua_ls', 'clangd', 'markdown_oxide' },
+    ensure_installed = { 'lua_ls', 'clangd' },
     handlers = {
         function(server_name)
             require('lspconfig')[server_name].setup({})
