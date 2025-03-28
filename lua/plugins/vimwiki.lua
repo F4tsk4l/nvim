@@ -3,7 +3,12 @@ return {
   init = function()
     vim.g.vimwiki_list = {
       {
-        path = "~/vimwiki",
+        path = "/home/g4m3r/vimwiki/",
+        syntax = "markdown",
+        ext = ".md",
+      },
+      {
+        path = "/home/g4m3r/Desktop/Mu5tur4d/N0t35/vimwiki/",
         syntax = "markdown",
         ext = ".md",
       },
@@ -19,15 +24,8 @@ return {
     vim.g.vimwiki_markdown_link_ext = 1 -- add markdown file extension when generating links
     vim.g.taskwiki_markdown_syntax = "markdown"
   end,
-  --opts = {
-  --    vim.g.vimwiki_list = {
-  --      path = "~/vimwiki/",
-  --      syntax = "markdown",
-  --      ext = ".md",
-  --    }
-  --    vim.g.vimwiki_list = {
-  --      path = "~/Desktop/Mu5tur4d/N0t35/vimwiki/",
-  --      syntax = "markdown",
-  --      ext = ".md",
-  --    }
 }
+-- vim.g.wiki_1 = {}
+-- vim.g.wiki_1.path = "~/vimwiki/"
+-- vim.g.wiki_2 = {}
+-- vim.g.wiki_2.path = "~/Desktop/Mu5tur4d/N0t35/vimwiki/"
