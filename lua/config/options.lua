@@ -5,3 +5,4 @@ vim.g.maplocalleader = ","
 local opt = vim.opt
 opt.hlsearch = false
 opt.incsearch = true
+opt.wrap = true
